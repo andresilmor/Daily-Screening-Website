@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica Neue Light,Helvetica,Arial,sans-serif; 
+    background-color: #E8E8E8;
+    color:#1A4351;
+}
+
+article {
+    margin: 5% 1%;
+    padding: 1% 1% 2% 1%;
+}
+
+.header a {
+    color: grey;
+}
+
+.header a:hover {
+    color: grey;
+    text-decoration: none;
+    border-bottom: 2px solid #0064E8;
+    padding-bottom: 2px;
+    
+}
+
+.form-search {
+    background-color:red;
+    display: inline-block;
+}
+
+.input-search {
+    height: 48px;
+    width: 450px;
+    padding: 3%;
+}
+
+#title {
+    text-decoration: none;
+    color: black;
+}
+
+.reload {
+    position: fixed;
+    width: 6%;
+    bottom: 7%;
+    right: 1.9%;
+}
+
+
+.loader {
+    position: fixed;
+    margin: 6% 40%;
+    width: 15%;
+}
+
+.background-cor {
+    background-color: #ffffff;
+    min-height: 400px;
+    margin: 4% 5% 3% 5%;
+    padding: 2% 4%;
+}
+
+.header {
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+    background-color: #ffffff;
+    margin: 4% 5% 3% 5%;
+    padding: 2% 4%;
+}
+
+.header-title {
+    display: inline;
+    font-size:150%;
+    position: relative;
+    top: 10px;
+}
+
+.header-opc {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+}
+
+
+.background > img {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    left: -6%;
+    float: left;
+}
+
+.background > div {
+    position: relative;
+    background-color: black;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+}
+
+.left-side {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding-top: 7%;
+}
+
+.left-side > button {
+    background-color: transparent;
+    color: white;
+}
+
+#registar-page {
+    padding-top: 4%;
+}
+
+.right-side {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding-top: 12%;
+}
+
+.right-side > h1 {
+    font-size: 3em;
+}
+
+.right-form {
+    position: relative;
+    display: list-item;
+}
+
+.button {
+    background-color: #1A4351;
+    color: white;
+}
+
+.goToRegister {
+    position: relative;
+    background-color: transparent;
+    border: solid 1px #FFFFFF;
+    border-radius: 1111px;
+    color: white;
+    top: 40%;
+    padding: 3.5% 25%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.goToRegister:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.login-form input {
+    border-style: solid;
+    border-radius: 50px;
+    border-color: black;
+    color: #B1AFAF;
+    margin-top: 4%;
+    padding: 2%;
+    height: 12%;
+    width: 60%;
+    text-align: center;
+    padding-top: 2%;
+    font-size: 1.1em;
+}
+
+.register-form input {
+    border-style: solid;
+    border-radius: 50px;
+    border-color: black;
+    color: #B1AFAF;
+    margin-top: 4%;
+    padding: 2%;
+    height: 11%;
+    width: 60%;
+    text-align: center;
+    padding-top: 2%;
+    font-size: 1.1em;
+}
+
+
