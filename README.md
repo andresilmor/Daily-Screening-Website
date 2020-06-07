@@ -1,0 +1,2 @@
+# Daily-Screening-Website
+Project for Web Development 2, the idea comes from another class where was developed the UI and UX for an mobile aplication with for sick people that would create a better communication between medics and sicks, now this website would be used only by medics to access info about sicks, the focus its the used of PHP, its also applied the MVC architecture and its used API. (Its still in development but in pause)
