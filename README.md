@@ -1,2 +1,3 @@
-# Daily-Screening-Website
-"Web Development II" curricular unit end project.
+# Daily Screening Website
+
+The goal of this work was the use of PHP and other tecnologies, as such this project include Login/Register function, providing security both in passoword data using md5 codification and limitations of page access. Also includes interaction with a API to get recent News (at the time it was not offered integration with PHP, but with Javascript, so it was necessary a litte of cheat). Its still not very responsive, only in the News page where was used Bootstrap, unfinished is the Ajax part, where it was to use jQuery, and the listage of patients and data edition. This work was made using a basic MVC Architecture and PDO to the connection with a MySQL database also created from zero.
