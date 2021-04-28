@@ -1,0 +1,55 @@
+<?php
+$str = json_decode($_POST['str'], true); 
+?>
+
+<a href="/carregando"> <img src="img/reload.png" class="reload img-fluid"></a>
+
+<div class="background-cor"> 
+
+<?php
+for($index = 0; $index <= sizeof($str)-1; $index++) {
+?>
+
+<article>
+  <div class="container my-2">
+    <div class="row">
+      <div class="col-sm">
+
+        <em><small>
+          <span class="col-sm">
+            <?= $str[$index]['publishedAt']?>
+          </span>
+
+          <span class="col-sm">
+            Author: <?php if($str[$index]['author'] != '') { echo $str[$index]['author']; } else { echo 'Unknown'; } ?>
+          </span>
+
+          <span class="col-sm">
+            Source: <?= $str[$index]['source']['name']?>
+          </span>
+        </em></small>
+
+        <h4 class="mt-1">
+          <?= $str[$index]['title']?>
+        </h4>
+
+        <p class="mt-2">
+          <?= $str[$index]['content']?>
+        </p>
+        
+        <a href="<?php echo $str[$index]['url']; ?>" target="_blank">More...</a>
+  
+      </div>
+
+      <div class="col-sm">
+        <img src="<?php echo $str[$index]['urlToImage']; ?>" class="img-fluid rounded float-right" onerror="this.style.display='none'" alt="Image: <?php echo $str[$index]['urlToImage']; ?>">
+      </div>
+
+    </div>
+  </div>
+</article>
+
+<?php } ?>
+
+</div>
+

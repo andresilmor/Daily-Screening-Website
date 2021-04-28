@@ -1,0 +1,39 @@
+<html lang="en">
+	<head>
+        <meta charset="utf-8" />
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/img/fav/favicon-180x180.png">
+  		<link rel="icon" type="image/png" sizes="32x32" href="/img/fav/favicon-32x32.png">
+  		<link rel="icon" type="image/png" sizes="16x16" href="/img/fav/favicon-16x16.png">
+
+		<link rel="stylesheet" href="lib/bootstrap4/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+        <script src="/js/functions.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		
+		<title>Daily Screening</title>
+
+	</head>
+
+    <body onload="noticiasAPI()">
+
+        <header class="header">
+            <ul class="list-inline header-title">
+                <li class="list-inline-item"><a href="/carregando" id="title"><h2>Daily Screening</h2></a></li>
+            </ul>
+            <ul class="list-inline header-opc ml-3">
+                <li class="list-inline-item"><h5><a href="/carregando">News</a></h5></li>
+                <li class="list-inline-item"><h5><a href="/patients">Patients</a></h5></li>
+                <li class="list-inline-item"><h5><a href="/logout">Logout</a></h5></li>
+            </ul>
+        </header>
+        	
+        <?= $this->content() ?>
+
+    </body>
+
+</html>

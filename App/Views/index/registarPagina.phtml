@@ -1,0 +1,42 @@
+<div class="background">
+    <img src="img/medicina-de-precisao.png" width="100%" alt="Background Image">
+    <div></div>
+</div>
+
+<div class="left-side">
+  <a href='/' class="goToRegister"><b>Log In</b></a>
+</div>
+    
+
+<div class="right-side" id="registar-page">
+  <h1>Sign in</h1>
+
+  <form class="register-form" action="/registar" method="POST">
+    <input type="text" placeholder="Doctor's number" name="identificacao" id="login-numero">
+    <br>
+    <input type="text" placeholder="Name and nickname" name="nomeTodo" id="login-password">
+    <br>
+    <input type="password" placeholder="Password" name="password" id="login-password">
+    <br>
+    <input type="password" placeholder="Confirm Password" name="confirmPassword" id="login-password">
+    <br>
+    <input class="button" type="submit" value="Sign In" style="color:#FFFFFF">
+    
+    <?php if(isset($_GET['erro']) && $_GET['erro'] == 'id') { ?>
+      <br>
+      <p class="mt-2">Identificação Inválida</p>
+    <?php  } elseif(isset($_GET['erro']) && $_GET['erro'] == 'password') { ?>
+      <br>
+      <p class="mt-2">Passwords não são iguais</p>
+    <?php  } elseif(isset($_GET['erro']) && $_GET['erro'] == 'nome') { ?>
+      <br>
+      <p class="mt-2">Insira nome completo</p>
+    <?php  } elseif(isset($_GET['erro']) && $_GET['erro'] == 'registrado') { ?>
+      <br>
+      <p class="mt-2">Médico já registrado</p>
+    <?php } ?>
+    
+  </form> 
+</div>
+
+

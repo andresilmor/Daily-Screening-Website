@@ -1,0 +1,28 @@
+<div class="background">
+    <img src="img/medicina-de-precisao.png" width="100%" alt="Imagem de Fundo">
+    <div></div>
+</div>
+
+<div class="left-side">
+  <a href='/registarPagina' class="goToRegister"><b>Sign In</b></a>
+</div>
+    
+
+<div class="right-side">
+  <h1>Log in</h1>
+
+  <form class="login-form" action="/login" method="POST">
+    <input type="text" placeholder="Doctor's number" name="identificacao" id="login-numero">
+      <br>
+    <input type="password" placeholder="Password" name="password" id="login-password">
+      <br>
+    <input class="button" type="submit" value="Log In" style="color:#FFFFFF">
+    
+    <?php if(isset($_GET['erro']) && $_GET['erro'] == 'invalido') { ?>
+      <br>
+      <p class="mt-2">Informações inválidas</p>
+    <?php  } ?>
+  </form> 
+</div>
+
+

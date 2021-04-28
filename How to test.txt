@@ -1,0 +1,19 @@
+Para testar o site é necessário na linha de comando "criar um localhost" para o pasta public, desse forma faz distinção entre
+a parte pública e privada do website
+
+Para instalar o php como uma variavel do sistema é preciso ir as Propriedades avançadas do sistema, depois a Variaveis de Ambiente, e
+em PATH do utilizador adicionar um novo caminho para a pasta php dentro do xampp
+
+depois na linha de comando mudar o caminho para a pasta public e depois inserior o comando: php -S localhost:8080 
+
+
+
+
+
+To test the site it is necessary on the command line "create a localhost" for the public folder, thus distinguishing between
+the public and private part of the website
+
+To install php as a system variable you need to go to Advanced system properties, then Environment Variables, and
+in the user's PATH add a new path to the php folder inside xampp
+
+then on the command line change the path to the public folder and then enter the command: php -S localhost: 8080
